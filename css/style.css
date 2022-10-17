@@ -418,23 +418,26 @@ main .news-info .services .service .text {
     gap: 25px;
 }
 
+
 main .services-section .full-service {
-    width: 373px;
+    flex: 1;
 }
 
 /* service arrows */
 
-
+main .services-section .services{
+    position: relative;
+}
 main .services-section .services .left-arrow {
     position: absolute;
-    top: 180px;
-    left: 312px;
+    top: 35%;
+    left: -15px;
 }
 
 main .services-section .services .right-arrow {
     position: absolute;
-    top: 180px;
-    right: 312px;
+    top: 35%;
+    right: -15px;
 }
 
 main .services-section .services .bottom {
@@ -812,7 +815,7 @@ main .feedback {
 
 /* CONTACT-PAGE */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
     .text-extra-large {
         font-size: 24px;
         line-height: 29px;
@@ -917,7 +920,7 @@ main .feedback {
     }
 
 
-    main .services-section .services {
+    main .news-info .services {
         margin: auto;
         width: 90%;
     }
@@ -1066,8 +1069,11 @@ main .feedback {
 
 }
 
-@media only screen and (min-width:450px) and (max-width:680px) {
+@media only screen and (min-width:550px) and (max-width:700px) {
     .navigation {
+        display: none;
+    }
+    .mobile-view-none{
         display: none;
     }
 
@@ -1091,9 +1097,12 @@ main .feedback {
         /* align-items: center; */
         /* justify-content: center; */
     }
+    main .services-section .heading{
+        gap: 100px;
+    }
 }
 
-@media only screen and (min-width:680px) and (max-width:1200px) {
+@media only screen and (min-width:700px) and (max-width:1200px) {
     header .navigation ul li {
         padding: 0 20px;
         flex: 1;
