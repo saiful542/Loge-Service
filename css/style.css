@@ -16,6 +16,7 @@ body {
 .container {
     max-width: 1240px;
     margin: auto;
+    width: 95%;
 }
 
 .fluid-container {
@@ -200,6 +201,7 @@ header .top-bar .right-side ul li a {
     align-items: center;
     justify-content: center;
     display: inline-block;
+
 }
 
 header .top-bar .right-side ul li .anchor_1:before {
@@ -218,12 +220,12 @@ header .top-bar .right-side ul li .anchor_2::before {
     padding-left: 25px;
 }
 
-header .top-bar .mobile-view .search-button a {
+header .top-bar .mobile-view .search-button {
     border-radius: 2px;
-    padding: 9px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* padding: 8px 10px; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 header .top-bar .mobile-view {
@@ -279,16 +281,30 @@ main .banner .top {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 200px 0;
     margin-bottom: 6px;
 }
 
 main .banner .top .contents {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    height: 50vh;
 }
+main .banner .top .contents .content{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .banner .top .contents .slider-navigation .left-arrow{
+    position: absolute;
+    left: 0;
+    top: 45%;
+}
+main .banner .top .contents .slider-navigation .right-arrow{
+    position: absolute;
+    right: 0;
+    top: 45%;
 
+}
 main .banner .top .contents .content .text .paragraph {
     padding-top: 30px;
 }
@@ -299,19 +315,25 @@ main .banner .top .contents .content .banner-button-div {
 
 main .banner .bottom {
     /* display: flex; */
-    align-items: center;
+    /* align-items: center; */
     /* flex-wrap: wrap; */
     gap: 6px;
 }
 
 main .banner .bottom .content {
-    /* flex: 1; */
+    flex: 1;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 108px;
-    padding-bottom: 65px;
-    width: 100%;
+    height: 25vh;
+    position: relative;
+    /* width: 100%; */
+}
+main .banner .bottom .content .heading{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 main .banner .bottom .content:nth-child(1) {
@@ -837,7 +859,13 @@ main .feedback {
     }
 
     header .top-bar .mobile-view .search-button a {
-        padding: 6.15px;
+        display: inline-block;
+        text-align: center;
+        /* padding: 2px; */
+    }
+
+    header .top-bar .mobile-view .search-button img {
+        width: 50%;
     }
 
     /* top bar */
@@ -1036,4 +1064,40 @@ main .feedback {
 
     /* CONTACT PAGE */
 
+}
+
+@media only screen and (min-width:450px) and (max-width:680px) {
+    .navigation {
+        display: none;
+    }
+
+    header .top-bar .right-side {
+        display: none;
+    }
+    header .top-bar .mobile-view .search-button a{
+        display: inline-block;
+        padding: 0;
+    }
+    header .top-bar .mobile-view .search-button img {
+        /* width: 70%; */
+        padding: 5px;
+        padding-bottom: 2px;
+    }
+    header .top-bar .mobile-view {
+        display: flex;
+        width: 15%;
+        gap: 20px;
+        /* align-items: center; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+}
+
+@media only screen and (min-width:680px) and (max-width:1200px) {
+    header .navigation ul li {
+        padding: 0 20px;
+        flex: 1;
+        text-align: center;
+
+    }
 }
