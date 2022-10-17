@@ -288,23 +288,27 @@ main .banner .top .contents {
     position: relative;
     height: 50vh;
 }
-main .banner .top .contents .content{
+
+main .banner .top .contents .content {
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-main .banner .top .contents .slider-navigation .left-arrow{
+
+main .banner .top .contents .slider-navigation .left-arrow {
     position: absolute;
     left: 0;
     top: 45%;
 }
-main .banner .top .contents .slider-navigation .right-arrow{
+
+main .banner .top .contents .slider-navigation .right-arrow {
     position: absolute;
     right: 0;
     top: 45%;
 
 }
+
 main .banner .top .contents .content .text .paragraph {
     padding-top: 30px;
 }
@@ -329,11 +333,12 @@ main .banner .bottom .content {
     position: relative;
     /* width: 100%; */
 }
-main .banner .bottom .content .heading{
+
+main .banner .bottom .content .heading {
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 main .banner .bottom .content:nth-child(1) {
@@ -425,9 +430,10 @@ main .services-section .full-service {
 
 /* service arrows */
 
-main .services-section .services{
+main .services-section .services {
     position: relative;
 }
+
 main .services-section .services .left-arrow {
     position: absolute;
     top: 35%;
@@ -886,6 +892,11 @@ main .feedback {
         width: 50%;
     }
 
+
+    main .banner .bottom .content {
+        flex: auto;
+    }
+
     /* banner */
 
 
@@ -1073,22 +1084,26 @@ main .feedback {
     .navigation {
         display: none;
     }
-    .mobile-view-none{
+
+    .mobile-view-none {
         display: none;
     }
 
     header .top-bar .right-side {
         display: none;
     }
-    header .top-bar .mobile-view .search-button a{
+
+    header .top-bar .mobile-view .search-button a {
         display: inline-block;
         padding: 0;
     }
+
     header .top-bar .mobile-view .search-button img {
         /* width: 70%; */
         padding: 5px;
         padding-bottom: 2px;
     }
+
     header .top-bar .mobile-view {
         display: flex;
         width: 15%;
@@ -1097,7 +1112,8 @@ main .feedback {
         /* align-items: center; */
         /* justify-content: center; */
     }
-    main .services-section .heading{
+
+    main .services-section .heading {
         gap: 100px;
     }
 }
