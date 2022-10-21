@@ -729,13 +729,16 @@ main .new-blog-content .border-left {
 main .contact-section {
     justify-content: space-between;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 main .contact-section .content {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
 }
+
 
 main .frequent-question .left-side {
     flex: 1;
@@ -1118,6 +1121,10 @@ main .feedback {
     main .news-info .services .full-service {
         flex: 40%;
     }
+    main .frequent-question{
+        flex-direction: column;
+        gap: 50px;
+    }
 
 
 }
@@ -1125,6 +1132,10 @@ main .feedback {
 @media (min-width:701px) and (max-width:750px) {
     .custom-view-none {
         display: none !important;
+    }
+    main .frequent-question{
+        flex-direction: column;
+        gap: 50px;
     }
 }
 
