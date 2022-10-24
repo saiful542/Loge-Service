@@ -602,7 +602,7 @@ main .our-specialisation .services {
     flex-wrap: wrap;
 }
 main .our-specialisation .services .service{
-    min-width: 373px;
+    min-width: 260px;
     flex: 1 !important;
 }
 
@@ -920,9 +920,9 @@ main .feedback {
         padding-top: 40px;
     }
 
-    main .services-section .services .left-arrow,
+    .left-arrow,
     .right-arrow {
-        width: 20px;
+        width: 25px;
     }
 
     main .services-section .heading {
@@ -983,17 +983,17 @@ main .feedback {
         padding-top: 40px;
     }
 
-    main .our-partners .partners .left-arrow {
+    /* main .our-partners .partners .left-arrow {
         width: 23px;
         right: 96%;
         top: 55%;
-    }
+    } */
 
-    main .our-partners .partners .right-arrow {
+    /* main .our-partners .partners .right-arrow {
         width: 23px;
         left: 96%;
         top: 55%;
-    }
+    } */
 
     main .our-partners .partners .partner {
         width: 100%;
@@ -1130,7 +1130,7 @@ main .feedback {
 }
 @media only screen and (min-width:551px) and (max-width:1100px){
     main .new-blog-content{
-        flex-direction: column-reverse;
+        flex-direction: column;
     } 
     main .new-blog-content .right-side .image-content{
         flex-direction: row;
